@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CPNewbieBot": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\jbapt\\source\\repos\\CPNewbieBot\\CPNewbieBot\\bin\\Debug\\netcoreapp2.1"
+    }
+  }
+}

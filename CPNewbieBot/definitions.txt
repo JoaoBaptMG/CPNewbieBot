@@ -1,0 +1,11 @@
+definition
+pattern: seg(ment)?\s*tree
+title: Segment tree
+description: A data structure used to quickly update and query an operation on intervals in an array (O(n log n) time).
+url: https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
+
+definition
+pattern: bit|(binary\s+indexed|fenwick)\s+tree
+title: Binary Indexed Tree
+description: A data structure used for quick queries and updates of the prefix sum in an array (O(n log n) time), a sometimes faster alternative to a segment tree.
+url: https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/
