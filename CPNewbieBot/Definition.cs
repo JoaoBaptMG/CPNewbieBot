@@ -38,8 +38,7 @@ namespace CPNewbieBot
 
             foreach (var line in lines)
             {
-                if (line.StartsWith("definition"))
-                    defs.Add(new Definition());
+                if (line.StartsWith("definition")) defs.Add(new Definition());
                 else if (defs.Count == 0)
                     Console.WriteLine("WARNING: trying to set parameters of no definition. Skipping...");
                 else

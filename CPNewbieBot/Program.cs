@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using Telegram.Bot;
@@ -9,9 +10,6 @@ namespace CPNewbieBot
 {
     internal class Program
     {
-        const string TelegramBotToken = "692910923:AAGbJ9gv9Sw1U1I78gFAAqDvK1CQZuWinD8";
-
-
         static ITelegramBotClient TelegramBotClient;
 
         static void Main(string[] args)
@@ -21,7 +19,8 @@ namespace CPNewbieBot
 
         static async Task MainAsync(string[] args)
         {
-            TelegramBotClient = new TelegramBotClient(TelegramBotToken);
+            var token = File.ReadAllText("token.txt");
+            TelegramBotClient = new TelegramBotClient(token);
 
             var me = await TelegramBotClient.GetMeAsync();
             Console.WriteLine("Telegram bot started!");
